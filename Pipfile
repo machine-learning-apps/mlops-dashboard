@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+sklearn = "*"
+h2o = "*"
+pandas = "*"
+ipykernel = "*"
+matplotlib = "*"
+turicreate = "*"
+pandas-profiling = {extras = ["html", "notebook"],version = "*"}
+dora = "*"
+
+[requires]
+python_version = "3.6"
