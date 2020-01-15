@@ -29,6 +29,7 @@ github_username:  hamelsmu
 
 # Build settings
 theme: "just-the-docs"
+remote_theme: "pmarsceill/gijust-the-docs"
 plugins:
   - jekyll-feed
 
