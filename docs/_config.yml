@@ -53,3 +53,6 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+
+gems:
+  - jekyll-octicons
