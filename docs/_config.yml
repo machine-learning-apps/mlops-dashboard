@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+theme: "just-the-docs"
 title: MLOps Dashboard
 description: A Dashboard for MLOps, generated automatically by GitHub Pages.
 baseurl: "/" # the subpath of your site, e.g. /blog

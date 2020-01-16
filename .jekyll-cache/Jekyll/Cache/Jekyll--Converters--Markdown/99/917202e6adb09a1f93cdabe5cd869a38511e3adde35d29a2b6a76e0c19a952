@@ -1,0 +1,51 @@
+I"1<h1 id="evaluate-model">Evaluate Model</h1>
+
+<p>Compute a confusion matrix</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Normalized confusion matrix
+[[0.88173203 0.09765211 0.02061586]
+ [0.1303451  0.83997974 0.02967516]
+ [0.27873486 0.23896011 0.48230502]]
+
+
+
+
+
+&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f487d90af60&gt;
+</code></pre></div></div>
+
+<p><img src="Model_Eval_files/Model_Eval_2_2.png" alt="png" /></p>
+
+<h1 id="make-predictions">Make Predictions</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Using TensorFlow backend.
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">issue_labeler</span><span class="o">.</span><span class="n">get_probabilities</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="s">'Can someone please help me?'</span><span class="p">,</span> 
+                                <span class="n">title</span><span class="o">=</span><span class="s">'random stuff'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{'bug': 0.12618249654769897,
+ 'feature': 0.1929263472557068,
+ 'question': 0.6808911561965942}
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">issue_labeler</span><span class="o">.</span><span class="n">get_probabilities</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="s">'It would be great to add a new button'</span><span class="p">,</span> 
+                                <span class="n">title</span><span class="o">=</span><span class="s">'requesting a button'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{'bug': 0.019261939451098442,
+ 'feature': 0.9305700659751892,
+ 'question': 0.05016808584332466}
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">issue_labeler</span><span class="o">.</span><span class="n">get_probabilities</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="s">'It does` not work, I get bad errors'</span><span class="p">,</span> 
+                                <span class="n">title</span><span class="o">=</span><span class="s">'nothing works'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{'bug': 0.9065071940422058,
+ 'feature': 0.03202613815665245,
+ 'question': 0.06146678701043129}
+</code></pre></div></div>
+
+:ET
