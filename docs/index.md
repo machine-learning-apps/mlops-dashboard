@@ -1,96 +1,62 @@
 ---
-layout: default
-title: Home
-nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+layout: home
+title: Summary
 permalink: /
+nav_order: 1
 ---
 
-# Focus on writing good documentation
-{: .fs-9 }
+1. TOC
+{:toc}
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+Toy example of a [model card](https://arxiv.org/pdf/1810.03993.pdf)
 
----
+## Model Details
 
-## Getting started
+ - Developed by researchers at Google and the University of Toronto, 2018, v1.
+ - Convolutional Neural Net.
+ - Pretrained for face recognition then fine-tuned with cross-entropy loss for binary smiling classification.
 
-### Dependencies
+## Intended Use
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+ - Intended to be used for fun applications, such as creating cartoon smiles on real images; augmentative applications, such as providing details for people who are blind; or assisting applications such as automatically finding smiling photos.
+ - Particularly intended for younger audiences.
+ - Not suitable for emotion detection or determining affect; smiles were annotated
+based on physical appearance, and not underlying emotions.
 
-### Quick start: Use as a GitHub Pages remote theme
+## Factors
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-```yaml
-remote_theme: pmarsceill/just-the-docs
-```
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+ - Based on known problems with computer vision face technology, potential relevant factors include groups for gender, age, race, and Fitzpatrick skin type; hardware factors of camera type and lens type; and environmental factors oflighting and humidity.
+ - Evaluation factors are gender and age group, as annotated in the publicly available
+dataset CelebA [36]. Further possible factors not currently available in a public smiling dataset. Gender and age determined by third-party annotators based
+on visual presentation, following a set of examples of male/female gender and
+young/old age. Further details available in [36].
 
-### Local installation: Use the gem-based theme
+## Metrics
 
-1. Install the Ruby Gem
-```bash
-$ gem install just-the-docs
-```
-```yaml
-# .. or add it to your your Jekyll site’s Gemfile
-gem "just-the-docs"
-```
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-```yaml
-theme: "just-the-docs"
-```
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-```bash
-$ bundle exec just-the-docs rake search:init
-```
-3. Run you local Jekyll server
-```bash
-$ jekyll serve
-```
-```bash
-# .. or if you're using a Gemfile (bundler)
-$ bundle exec jekyll serve
-```
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
+ - Evaluation metrics include False Positive Rate and False Negative Rate to
+measure disproportionate model performance errors across subgroups. False
+Discovery Rate and False Omission Rate, which measure the fraction of negative (not smiling) and positive (smiling) predictions that are incorrectly predicted
+to be positive and negative, respectively are also reported. [48]
+ - Together, these four metrics provide values for different errors that can be calculated from the confusion matrix for binary classification systems.
+ - These also correspond to metrics in recent definitions of “fairness” in machine learning (cf. [6, 26]), where parity across subgroups for different metrics correspond to different fairness criteria.
+ - 95% confidence intervals calculated with bootstrap resampling.
+ - All metrics reported at the .5 decision threshold, where all error types (FPR, FNR, FDR, FOR) are within the same range (0.04 - 0.14).
 
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
+## Training Data
 
-### Configure Just the Docs
+ - CelebA [36], training data split.
+Evaluation Data
+ - CelebA [36], test data split.
+ - Chosen as a basic proof-of-concept.
 
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+## Ethical Considerations
 
----
+ - Faces and annotations based on public figures (celebrities). No new information
+is inferred or annotated.
 
-## About the project
+## Caveats and Recommendations
 
-Just the Docs is &copy; 2017-2019 by [Patrick Marsceill](http://patrickmarsceill.com).
-
-### License
-
-Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
-
-### Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
-
-#### Thank you to the contributors of Just the Docs!
-
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
-  </li>
-{% endfor %}
-</ul>
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
+ - Does not capture race or skin type, which has been reported as a source of disproportionate errors [5].
+ - Given gender classes are binary (male/not male), which we include as male/female. Further work needed to evaluate across a spectrum of genders.
+ - An ideal evaluation dataset would additionally include annotations for Fitzpatrick skin type, camera details, and environment (lighting/humidity) details.
