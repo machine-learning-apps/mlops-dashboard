@@ -36,11 +36,11 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
+  "Edit On GitHub":
+    - "//github.com/machine-learning-apps/mlops-dashboard"
 
 # Footer content appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2017-2019 Patrick Marsceill. Distributed by an <a href=\"https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt\">MIT license.</a>"
+footer_content: "Last updated 2/6/2019"
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil

@@ -26,7 +26,7 @@
   }
   ,"5": {
     "title": "Model Timeline",
-    "content": "David increased accuracy by 2% Michael deployed a model Hamel ran 25 experiments.",
+    "content": "increased accuracy by 2% 601423b . Michael deployed a model Hamel ran 25 experiments. WandB.com",
     "url": "http://localhost:4000/docs/reports/model_timeline/",
     "relUrl": "/docs/reports/model_timeline/"
   }
