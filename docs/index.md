@@ -9,8 +9,6 @@ nav_order: 1
 {:toc}
 
 
-Toy example of a [model card](https://arxiv.org/pdf/1810.03993.pdf)
-
 ## Model Details
 
  - Developed by researchers at Google and the University of Toronto, 2018, v1.

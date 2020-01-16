@@ -7,40 +7,58 @@ nav_order: 3
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
 
-<div class="TimelineItem">
-    <div class="TimelineItem-badge">
-    {% octicon flame %}
-    </div>
-    <div class="TimelineItem-body">
-      <a href="#" class="text-bold link-gray-dark mr-1">
-        <img class="avatar avatar-small" alt="aronchick" src="https://github.com/aronchick.png?v=3&s=64" width="20" height="20" />
-      </a> 
-      <span>increased accuracy by <strong>2%</strong></span>
-      <br>
-    </div>
-    <p class="branch-name">
-        {% octicon git-commit %} <a href="#">601423b</a>
-    </p>
-  </div>
 
-  <div class="TimelineItem">
-    <div class="TimelineItem-badge">
+
+
+    <p style="font-size:10px">Jan 2020</p>
+    <div class="TimelineItem">
+        <div class="TimelineItem-badge">
+        {% octicon flame %}
+        </div>
+        <div class="TimelineItem-body">
+    
+        <span>increased accuracy by <strong>2%</strong></span>
+        <br>
+        </div>
+        <p class="branch-name">
+            {% octicon git-commit %} <a href="#">601423b</a>
+        </p>
+    </div>
+
+
+    <div class="TimelineItem">
+  
+      <div class="TimelineItem-badge">
         {% octicon rocket %}
+      </div>
+  
+      <div class="TimelineItem-body">
+        Deployed a model to <a href="#" class="text-bold link-gray-dark mr-1">production</a>
+      </div>
+        
+        <p class="branch-name">
+            {% octicon git-branch %} <a href="https://github.com/machine-learning-apps/actions-ml-cicd/commit/52872721ab6090ea05aa32ca44d11e935d5cfa4f">demo-mlops-2</a>
+            
+        </p>
+        <span class="text-gray-light">(#34)</span>
+        
     </div>
-    <div class="TimelineItem-body">
-      Michael deployed a model
-    </div>
-  </div>
 
 
-  <div class="TimelineItem">
-    <div class="TimelineItem-badge">
+    <p style="font-size:10px">2 days ago</p>
+    <div class="TimelineItem">
+  
+      <div class="TimelineItem-badge">
         {% octicon checklist %}
-    </div>
-    <div class="TimelineItem-body">
-      Hamel ran 25 experiments.
-    </div>
-    <a href="https://app.wandb.ai/hamelsmu/test-wandb-action?workspace=user-hamelsmu">
+      </div>
+  
+      <div class="TimelineItem-body">
+        Ran 25 experiments
+      </div>
+      <a href="https://app.wandb.ai/hamelsmu/test-wandb-action?workspace=user-hamelsmu">
         WandB.com {% octicon link-external %}
     </a>
-  </div>
+    </div>
+
+
+
