@@ -4,6 +4,8 @@ title: Model Eval
 parent: Reports
 ---
 
+<center><p class="label label-red" style="opacity: 0.6;">Mockup / Illustrative</p></center>
+
 <a href="https://mybinder.org/v2/gh/machine-learning-apps/mlops-dashboard/master">
   <button class="btn btn-primary mr-2" type="button">Run Notebook</button>
 </a>

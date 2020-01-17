@@ -5,6 +5,8 @@ permalink: /summary
 nav_order: 2
 ---
 
+<center><p class="label label-red" style="opacity: 0.6;">Mockup / Illustrative</p></center>
+
 1. TOC
 {:toc}
 

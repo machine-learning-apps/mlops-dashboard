@@ -4,6 +4,8 @@ title: Deploy
 nav_order: 5
 ---
 
+<center><p class="label label-red" style="opacity: 0.6;">Mockup / Illustrative</p></center>
+
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
 <style>
   a.navigation-list-link {color: #7253ed}
