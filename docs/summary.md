@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Summary
-permalink: /page
+permalink: /summary
 nav_order: 2
 ---
 
