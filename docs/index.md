@@ -18,7 +18,7 @@ width="84" height="84" />
 
 ### Sections:
 
-[Link]({% link docs/reports/model_timeline.html %})
+[Link](mlops-dashboard{% link docs/reports/model_timeline.html %})
 
 - **[Summary]({{ "summary" | relative_url }})**: uses the `/metadata/summary.md` file located your repo.  This is meant to be a high level summary of your model.  A recommended format for this is discussed in [Model Cards for Model Reporting](https://arxiv.org/pdf/1810.03993.pdf).
 
