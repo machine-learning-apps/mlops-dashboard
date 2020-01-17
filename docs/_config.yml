@@ -17,7 +17,7 @@ remote_theme: pmarsceill/just-the-docs
 title: MLOps Dashboard
 description: A Dashboard for MLOps, generated automatically by GitHub Pages.
 baseurl: "/mlops-dashboard" # the subpath of your site, e.g. /blog
-url: "https:///machine-learning-apps.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https:///machine-learning-apps.github.io/mlops-dashboard" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
