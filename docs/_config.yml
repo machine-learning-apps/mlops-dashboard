@@ -54,5 +54,9 @@ compress_html:
   blanklines: false
   profile: false
 
+relative_links:
+  enabled: true
+
 gems:
   - jekyll-octicons
+  - jekyll-relative-links

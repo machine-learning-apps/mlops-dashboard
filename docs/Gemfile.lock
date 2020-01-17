@@ -240,7 +240,7 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
-    unicode-display_width (1.6.0)
+    unicode-display_width (1.6.1)
     zeitwerk (2.2.2)
 
 PLATFORMS
@@ -249,6 +249,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-octicons
+  jekyll-relative-links
 
 BUNDLED WITH
    2.1.4
