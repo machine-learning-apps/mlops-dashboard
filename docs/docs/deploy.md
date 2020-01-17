@@ -5,7 +5,9 @@ nav_order: 5
 ---
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-
+<style>
+  a.navigation-list-link {color: #7253ed}
+</style>
 <div class="blankslate">
   <img src="https://ghicons.github.com/assets/images/light/Actions.png" alt="" class="mb-3" />
   <h3 class="mb-1">Deploy Model On Your Infrastructure</h3>
