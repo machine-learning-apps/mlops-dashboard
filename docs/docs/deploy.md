@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Deploy
-nav_order: 4
+nav_order: 5
 ---
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
